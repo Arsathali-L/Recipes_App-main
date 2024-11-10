@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-const mongoURL = "mongodb+srv://arsathali:ali@cluster0.ilqgp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+const mongoURL = "mongodb+srv://arsathali:ali@cluster0.ilqgp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 async function createDbConnection() {
     try {
         await mongoose.connect(mongoURL);
